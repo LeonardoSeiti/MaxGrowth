@@ -1,0 +1,44 @@
+GET http://localhost:8080/categoria
+###
+POST http://localhost:8080/categoria
+content-type: application/json
+
+{
+    "tipo": "Proteinas",
+    "icon": "beef"
+
+}
+
+###
+
+DELETE http://localhost:8080/categoria/1
+###
+GET http://localhost:8080/produto
+
+###
+POST http://localhost:8080/produto
+content-type: application/json
+
+{
+    "nome": "Whey",
+    "descricao": "Whey Protein Concentrado 900g",
+    "sabor": "Morango",
+    "quantidade": 1,
+    "preco": 119.90
+
+}
+
+###
+POST http://localhost:8080/produto
+content-type: application/json
+
+{
+    "nome": "Creatina",
+    "descricao": "Creatina creapure 300g",
+    "quantidade": 2,
+    "preco": 99.90
+
+}
+
+### 
+GET http://localhost:8080/v3/api-docs
